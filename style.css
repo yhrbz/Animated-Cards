@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #f2f2f2;
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  clip-path: inset(47% 0 0 0);
+  z-index: -1;
+  height: 100%;
+}
+
+::selection {
+  background: #808080;
+  color: #fff;
+}
+
+.container {
+  max-width: 950px;
+  width: 100%;
+  overflow: hidden;
+  padding: 80px 0;
+}
+
+.container .main-card {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200%;
+  transition: 1s;
+}
+
+#two:checked ~ .main-card {
+  margin-left: -100%;
+}
+
+.container .main-card .cards {
+  width: calc(100% / 2 - 10px);
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 20px;
+  justify-content: space-between;
+}
+
+.main-card .cards .card1 {
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .cards .card1:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card1 .content1 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card1 .content1 .img1 {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #E0D14D;
+  margin-bottom: 14px;
+}
+
+.card1 .content1 .img1 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card1 .content1 .name1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card1 .content1 .job1 {
+  font-size: 20px;
+  color: #E0D14D;
+}
+
+.card1 .content1 .media-icons1 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons1 a {
+  text-align: center;
+  line-height: 38px;
+  height: 40px;
+  width: 40px;
+  margin: 0 4px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #E0D14D;
+  transition: all 0.3s ease;
+}
+
+.media-icons1 a:hover {
+  color: #E0D14D;
+  background-color: #fff;
+  border-color: #E0D14D;
+}
+
+.main-card .cards .card2 {
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .cards .card2:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card2 .content2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card2 .content2 .img2 {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #00AAEA;
+  margin-bottom: 14px;
+}
+
+.card2 .content2 .img2 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card2 .content2 .name2 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card2 .content2 .job2 {
+  font-size: 20px;
+  color: #00AAEA;
+}
+
+.card2 .content2 .media-icons2 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons2 a {
+  text-align: center;
+  line-height: 38px;
+  height: 40px;
+  width: 40px;
+  margin: 0 4px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #00AAEA;
+  transition: all 0.3s ease;
+}
+
+.media-icons2 a:hover {
+  color: #00AAEA;
+  background-color: #fff;
+  border-color: #00AAEA;
+}
+
+.main-card .cards .card3 {
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .cards .card3:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card3 .content3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card3 .content3 .img3 {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #FF5B96;
+  margin-bottom: 14px;
+}
+
+.card3 .content3 .img3 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card3 .content3 .name3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card3 .content3 .job3 {
+  font-size: 20px;
+  color: #FF5B96;
+}
+
+.card3 .content3 .media-icons3 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons3 a {
+  text-align: center;
+  line-height: 38px;
+  height: 40px;
+  width: 40px;
+  margin: 0 4px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #FF5B96;
+  transition: all 0.3s ease;
+}
+
+.media-icons3 a:hover {
+  color: #FF5B96;
+  background-color: #fff;
+  border-color: #FF5B96;
+}
+
+.main-card .cards .card4 {
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .cards .card4:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card4 .content4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card4 .content4 .img4 {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #6F6DDE;
+  margin-bottom: 14px;
+}
+
+.card4 .content4 .img4 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card4 .content4 .name4 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card4 .content4 .job4 {
+  font-size: 20px;
+  color: #6F6DDE;
+}
+
+.card4 .content4 .media-icons4 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons4 a {
+  text-align: center;
+  line-height: 38px;
+  height: 40px;
+  width: 40px;
+  margin: 0 4px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #6F6DDE;
+  transition: all 0.3s ease;
+}
+
+.media-icons4 a:hover {
+  color: #6F6DDE;
+  background-color: #fff;
+  border-color: #6F6DDE;
+}
+
+.main-card .cards .card5 {
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .cards .card5:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card5 .content5 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card5 .content5 .img5 {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #00BE92;
+  margin-bottom: 14px;
+}
+
+.card5 .content5 .img5 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card5 .content5 .name5 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card5 .content5 .job5 {
+  font-size: 20px;
+  color: #00BE92;
+}
+
+.card5 .content5 .media-icons5 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons5 a {
+  text-align: center;
+  line-height: 38px;
+  height: 40px;
+  width: 40px;
+  margin: 0 4px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #00BE92;
+  transition: all 0.3s ease;
+}
+
+.media-icons5 a:hover {
+  color: #00BE92;
+  background-color: #fff;
+  border-color: #00BE92;
+}
+
+.main-card .cards .card6 {
+  width: calc(100% / 3 - 10px);
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s ease;
+}
+
+.main-card .cards .card6:hover {
+  transform: translateY(-15px);
+}
+
+.cards .card6 .content6 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.cards .card6 .content6 .img6 {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #B6B1AD;
+  margin-bottom: 14px;
+}
+
+.card6 .content6 .img6 img {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #ffff;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.card6 .content6 .name6 {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.card6 .content6 .job6 {
+  font-size: 20px;
+  color: #B6B1AD;
+}
+
+.card6 .content6 .media-icons6 {
+  margin-top: 10px;
+  display: flex;
+}
+
+.media-icons6 a {
+  text-align: center;
+  line-height: 38px;
+  height: 40px;
+  width: 40px;
+  margin: 0 4px;
+  font-size: 18px;
+  color: #FFF;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: #B6B1AD;
+  transition: all 0.3s ease;
+}
+
+.media-icons6 a:hover {
+  color: #B6B1AD;
+  background-color: #fff;
+  border-color: #B6B1AD;
+}
+
+.container .button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button label {
+  height: 15px;
+  width: 15px;
+  border-radius: 20px;
+  background: #000000;
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.button label.active {
+  width: 35px;
+}
+
+#one:checked ~ .button .one {
+  width: 35px;
+}
+
+#one:checked ~ .button .two {
+  width: 15px;
+}
+
+#two:checked ~ .button .on {
+  width: 15px;
+}
+
+#two:checked ~ .button .two {
+  width: 35px;
+}
+
+input[type="radio"] {
+  display: none;
+}
